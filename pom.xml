@@ -12,23 +12,28 @@
         <dependency>
             <groupId>com.bloxbean.cardano</groupId>
             <artifactId>cardano-client-lib</artifactId>
-            <version>0.5.1</version>
+            <version>0.6.2</version>
         </dependency>
         <dependency>
             <groupId>com.bloxbean.cardano</groupId>
             <artifactId>cardano-client-backend</artifactId>
-            <version>0.5.1</version>
+            <version>0.6.2</version>
         </dependency>
         <dependency>
             <groupId>com.bloxbean.cardano</groupId>
             <artifactId>cardano-client-backend-ogmios</artifactId>
-            <version>0.5.1</version>
+            <version>0.6.2</version>
+        </dependency>
+        <dependency>
+            <groupId>com.bloxbean.cardano</groupId>
+            <artifactId>cardano-client-backend-blockfrost</artifactId>
+            <version>0.6.2</version>
         </dependency>
 
         <dependency>
             <groupId>com.bloxbean.cardano</groupId>
             <artifactId>yaci-cardano-test</artifactId>
-            <version>0.0.2</version>
+            <version>0.1.0</version>
             <scope>test</scope>
         </dependency>
 

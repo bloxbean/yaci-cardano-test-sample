@@ -20,6 +20,7 @@ class MintServiceTest {
         String minterAddress = minterAccount.baseAddress();
 
         YaciCardanoContainer yaciCardanoContainer = new YaciCardanoContainer()
+//                .withApiMode(ApiMode.OGMIOS)
                 .withInitialFunding(new Funding(minterAccount.baseAddress(), 20000))
                 .withLogConsumer(outputFrame -> System.out.println(outputFrame.getUtf8String()));
 
@@ -38,6 +39,5 @@ class MintServiceTest {
         assertMe(yaciCardanoContainer)
                 .utxos(minterAddress).hasLovelaceBalance(bal -> bal.compareTo(adaToLovelace(20000)) < 0);
         assertMe(yaciCardanoContainer).hasAssetBalance(minterAddress, policy.getPolicyId(), "TestToken", 1000);
-
     }
 }
